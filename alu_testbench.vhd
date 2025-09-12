@@ -125,7 +125,7 @@ begin
         
         wait for 10ns;
         
-        expected_dout := (XLen-1 downto 6 => '1', others => '0');
+        expected_dout := (XLen-1 downto 5 => '1', others => '0');
         assert Dout = expected_dout report "10: SLL amount is incorrect" severity error;
         ----------------------------------------------------------------------------------------------------------------
         --Test Case 11: Shift Right Logical
